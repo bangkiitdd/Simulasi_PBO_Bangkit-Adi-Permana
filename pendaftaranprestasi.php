@@ -25,8 +25,9 @@ class PendaftaranPrestasi extends Pendaftaran {
         return $list;
     }
 
+    // Tahap 5: Overriding Perhitungan Biaya (Potongan 50.000)
     public function hitungTotalBiaya() {
-        return 0;
+        return $this->biaya_pendaftaran_dasar - 50000;
     }
 
     // Polimorfisme Cetak Informasi Unik

@@ -25,8 +25,9 @@ class PendaftaranReguler extends Pendaftaran {
         return $list;
     }
 
+    // Tahap 5: Overriding Perhitungan Biaya (Murni Biaya Dasar)
     public function hitungTotalBiaya() {
-        return 0;
+        return $this->biaya_pendaftaran_dasar;
     }
 
     // Polimorfisme Cetak Informasi Unik

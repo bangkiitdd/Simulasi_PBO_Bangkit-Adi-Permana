@@ -25,8 +25,9 @@ class PendaftaranKedinasan extends Pendaftaran {
         return $list;
     }
 
+     // Tahap 5: Overriding Perhitungan Biaya (Surcharge 25% -> dikali 1.25)
     public function hitungTotalBiaya() {
-        return 0;
+        return $this->biaya_pendaftaran_dasar * 1.25;
     }
 
     // Polimorfisme Cetak Informasi Unik
