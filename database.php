@@ -3,7 +3,7 @@ class Database {
     private $host = "localhost";
     private $username = "root";
     private $password = "";
-    private $db_name = "DB_SIMULASI_PBO_KELAS_NamaLengkap"; // Ubah sesuai nama DB-mu
+    private $db_name = "DB_SIMULASI_PBO_TI1C_BANGKITADIPERMANA"; // Ubah sesuai nama DB-mu
     public $conn;
 
     public function getConnection() {
